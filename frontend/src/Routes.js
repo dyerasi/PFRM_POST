@@ -1,13 +1,27 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
+import {
+  createBrowserRouter
+} from "react-router-dom";
 
-import App from './components/App';
-import {NotFoundPage, HomePage, EventListPage} from './common';
+import App from './App';
+import {ErrorPage, HomePage, EventListPage} from './common';
 
-export default (
-  <Route path='/' Component={App}>
-    <IndexRoute Component={HomePage} />
-    <Route path="EventList" component={EventListPage} />
-    <Route path="*" component={NotFoundPage} />
-  </Route>
-)
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "home",
+    element: <HomePage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "events",
+    element: <EventListPage />,
+    errorElement: <ErrorPage />,
+  },
+]);
+
+
