@@ -1,7 +1,9 @@
-const EventListPage = () => {
+import { Layout } from "./Layout";
+
+export const EventListPage = () => {
   return (
-    <div>Hello EventList</div>
+    <Layout>
+      <div>Hello EventList</div>
+    </Layout>
   )
 };
-
-export default EventListPage;

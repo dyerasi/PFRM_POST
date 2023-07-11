@@ -1,9 +1,12 @@
-const HomePage = () => {
+import { Layout } from "./Layout"
+
+export const HomePage = () => {
   return (
-    <div>
-      Home Page
-    </div>
+    <Layout>
+      <div>
+        Home Page
+      </div>
+    </Layout>
+    
   )
 }
-
-export default HomePage;

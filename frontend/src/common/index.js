@@ -1,4 +1,4 @@
-export * from "./NavBar"
 export * from "./EventList"
-export * from "./NotFound"
+export * from "./Error"
 export * from "./Home"
+export * from "./Layout"

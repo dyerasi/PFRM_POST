@@ -1,3 +1,34 @@
+# DEV ONLY !!!!
+
+## 1. Regarding src/layout and header/footer:
+
+For every new component added that needs a header/footer. Please wrap the components returned jsx with a Layout component
+See src/common/Home for an example of how to do this.
+
+## 2. Regarding adding new Routes
+
+We use routes to link between different pages. To add a simple Route is a two step process.
+
+1. Edit src/Routes.js and add in a new Route that links to your component
+2. Add a Link component with "/" + the path you created in step 1
+
+See src/common/Layout/NavBar for an example of step 2
+
+## 3. Regarding Project Organization
+
+1. Keep all components common to musicians and audience in src/common. Create a new nested folder if your component has subcomponents has new subcomponents in different files.
+2. All redux logic and slices belong in the src/state folder.
+3. All miscellanious but common fuctions to cut down on code repition belongs in src/hooks folder
+
+## 4. Regarding consistent imports
+
+1. Best practice is to create an index file in each folder that exports everything from that folder
+2. This allows easy imports in other folders through a single import statement. Please see src/common/Layout/index for an example of this.
+
+## 5. Questions
+
+1. Please text or call Devin with any additional questions.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
