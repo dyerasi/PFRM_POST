@@ -21,4 +21,4 @@ export const eventsApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetEventByIdQuery } = eventsApi
+export const { useGetEventByIdQuery, useGetAllEventsQuery } = eventsApi
