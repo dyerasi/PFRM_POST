@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div>
+    <div className="fixed bottom-0">
       <h1>Placeholder for footer</h1>
     </div>
   )
