@@ -5,6 +5,14 @@
 For every new component added that needs a header/footer. Please wrap the components returned jsx with a Layout component
 See src/common/Home for an example of how to do this.
 
+## 1.5 Branching Best Practices
+- always checkout a new branch for new features
+  '''
+  git checkout -b branch_name
+  '''
+- at the end of each day push whatever you work you have to that branch
+- pull request to main when your feature is completed
+
 ## 2. Regarding adding new Routes
 
 We use routes to link between different pages. To add a simple Route is a two step process.
